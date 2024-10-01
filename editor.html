@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Imagenes</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles_edit.css">
+   
+</head>
+<body>
+    <main>
+        <div class="foto_area">
+            <div class="value_elements">
+                <div id="opciones_texto">
+                    <div id="grupo_1">
+                            <!--FUENTE_TEXTO-->
+                        <div class="cont_opciones ">
+                            <div id="fuente_texto" >
+                                <p id="text_tipo" data-value="Arial">Arial</p>
+                                <img src="imagenes/iconos/down.png" alt="flecha_despliegue">
+                            </div>
+                            <div id="opt_fuente_texto" >
+                                <p id="Arial" style="font-family: Arial;" data-value="Arial">Arial</p>
+                                <p id="Impact" style="font-family: Impact;" data-value="Impact">Impact</p>
+                                <p id="Courier" style="font-family: Courier;" data-value="Courier">Courier</p>
+                                <p id="Verdana" style="font-family: Verdana;" data-value="Verdana">Verdana</p>
+                                
+                            </div>
+                        </div>
+
+                        <!--TAMAÑO TEXTO-->
+                        <div class="cont_opciones ">
+                            <div id="size_texto">
+                                <img src="imagenes/iconos/font.png" alt="Tamaño fuente">
+                                <img src="imagenes/iconos/down.png" alt="flecha_despliegue">
+                            </div>
+                            <div id="opt_size_texto" >
+                                <p>Tamaño:</p>
+                                <input type="range" value="16" id="size_value">
+                                <p id="text_size">16px</p>
+                            </div>
+                            
+                        </div>
+
+                        <!--NEGRITA TEXTO-->
+                        <div class="cont_opciones ">
+                            <div id="bold_texto">
+                                <img src="imagenes/iconos/bold.png" alt="Negrita">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="grupo_2">
+                            <!--ITALIC TEXTO-->
+                        <div class="cont_opciones ">
+                            <div id="italic_texto">
+                                <img src="imagenes/iconos/cursiva.png" alt="Cursiva">
+                            </div>
+                        </div>
+
+
+                        <!--COLOR TEXTO-->
+                        <div class="cont_opciones ">
+                            <div id="color_texto">
+                                <img src="imagenes/iconos/color.png" alt="Color fuente">
+                                <img src="imagenes/iconos/down.png" alt="flecha_despliegue">
+                            </div>
+                            <div id="opt_color_texto">
+                                <input type="color" id="color_text">
+                            </div>
+                            
+                        </div>
+
+
+                        <!--OPACIDAD TEXTO-->
+                        
+                        <div class="cont_opciones ">
+                            <div id="opacida_texto">
+                                <img src="imagenes/iconos/opacidad.png" alt="Opacidad">
+                                <img src="imagenes/iconos/down.png" alt="flecha_despliegue">
+                            </div>
+                            <div id="opt_opacida_texto" >
+                                <p>Tamaño:</p>
+                                <input type="range" value="100" id="opacidad_text_value">
+                                <p id="text_opacida">100%</p>
+                            </div>
+                            
+                        </div>
+
+                        <!--DELETE-->
+                        
+                        <div class="cont_opciones ">
+                            <div id="btn_delete_text">
+                                <img src="imagenes/iconos/delete.png" alt="Delete_btn">
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+
+                    
+        
+                </div>
+
+                <div id="opciones_imagen">
+
+                    <!--OPACIDAD TEXTO-->
+                    
+                    <div class="cont_opciones ">
+                        <div id="opacida_img">
+                            <img src="imagenes/iconos/opacidad.png" alt="Opacidad">
+                            <img src="imagenes/iconos/down.png" alt="flecha_despliegue">
+                        </div>
+                        <div id="opt_opacida_img" >
+                            <p>Tamaño:</p>
+                            <input type="range" value="100" id="opacidad_img_value">
+                            <p id="img_opacida">100%</p>
+                        </div>
+                        
+                    </div>
+
+                    <!--DELETE-->
+                    
+                    <div class="cont_opciones ">
+                        <div id="btn_delete_img">
+                            <img src="imagenes/iconos/delete.png" alt="Delete_btn">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div id="canvas_container">
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <label for="principal_file_img" id="principal_file_label">
+                <div class="btn_img_principal">
+                    <div id="container_principal">
+                        <div class="img_area_principal">
+                            <img src="imagenes/iconos/image_icon.png" alt="icono guardar">
+                        </div>
+                        <p>Imagen Principal</p>
+                        <input type="file" id="principal_file_img" accept="image/*">
+                    </div>
+                </div>
+            </label>
+            
+        </div>
+            
+        <div class="extra_btn_area">
+            <div id="menu_btn">
+                <img src="imagenes/iconos/mas.png" alt="">
+            </div>
+            <div class="logo_icons_area">
+                <a href="Index.html"><img src="imagenes/iconos/hacia-atras.png" alt="Return_icon"></a>
+                <a href="Index.html"><img src="imagenes/logos/logo-water-marks-3.png" alt="Logo_water_marks"></a>
+            </div>
+            <div class="btn_area">
+                <div class="btn_files_area">
+                    <label for="btn_file_img" id="bnt_file_label">
+                        <div class="btn_area_add">
+                            <div class="img_area">
+                                <img src="imagenes/iconos/image_icon.png" alt="icono imagenes">
+                            </div>
+                            <p>Añadir Imagen</p>
+                            <input type="file" id="btn_file_img" accept="image/*">
+                        </div>
+
+                    </label>
+                    
+                    <div class="btn_area_add" id="btn_text">
+                        <div class="img_area_text">
+                            <img src="imagenes/iconos/text_icon.png" alt="icono texto">
+                        </div>
+                        <p>Añadir Texto</p>
+                    </div>
+                </div>
+                
+                <div class="btn_area_save">
+                    <div class="img_area">
+                        <img src="imagenes/iconos/guardar.png" alt="icono guardar">
+                    </div>
+                    <p>Guardar Imagen</p>
+    
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    
+    <!--SCRIPTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+    <script src="js/script_editor.js"></script>
+</body>
+</html>

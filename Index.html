@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterMarks</title>
+
+    <!--NAV-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&display=swap"
+        rel="stylesheet">
+
+
+    <!--CSS-->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <!--CABECERA-->
+    <header >
+        <img alt="logo de la marca" id="logo" src="imagenes/logos/logo-water-marks-3.png">
+        <button class="abrir-menu" id="abrir"><img src="svg/menu.svg" alt="ICONO-MENU" id="icono-menu"></button>
+        <nav id="nav-container" class="">
+            <ul id="ul-nav">
+                <button class="cerrar-menu" id="cerrar"><img src="svg/close.svg" alt="ICONO-CLOSE" id="icono-close"></button>
+                <li><a href="#">About</a></li>
+                <li><a href="#zona-2">Tipos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <!--ZONA PRINCIPAL-->
+        <div id="zona-1">
+            <div id="title">
+                <a id="title-link" href="#">
+                    <div id="title-text-container">
+                        <!--TITULO PRINCIPAL-->
+                        <h1 id="principal-tit">
+                            water
+                        </h1>
+                        <!--TITULO SECUNDARIO-->
+                        <h3 id="secundari-tit">
+                            MARKS
+                        </h3>
+                    </div>
+                </a>
+                <!--BOTON PARA MAS INFORMACION-->
+                <div id="info-but-container">
+                    <span id="info-but"><a href="editor.html"><b>+</b> Información</a></span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!--ZONA SELECTOR DE TIPOS DE MARCAS DE AGUA-->
+        <div id="zona-2">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <!--CARTA 1-->
+                    <div class="cartas swiper-slide" id="visible">
+                        <div class="texto-carta ">
+                            <h3>Visible</h3>
+                            <p>Esta es una de las mas comunes, utilizada para que el usuario conozca el autor del contenido.</p>
+                            <button class="btn">Crear</button>
+                        </div>
+                    </div>
+
+                    <!--CARTA 2-->
+                    <div class="cartas swiper-slide" id="fragil">
+                        <div class="texto-carta">
+                            <h3>Frágil</h3>
+                            <p>Las marcas de agua frágiles, nos permiten conocer si el contenido ha sido modificado, ya que al alterar el archivo de cualquier forma, la marca de agua no podra ser recuperada.</p>
+                            <button class="btn">Crear</button>
+                        </div>
+                    </div>
+
+                    <!--CARTA 3-->
+                    <div class="cartas swiper-slide" id="no_visible">
+                        <div class="texto-carta">
+                            <h3>No Visibles</h3>
+                            <p>Esta marca de agua, es clave para pasar desapercibida ya que el usuario no es consciente de que esta marcada y mantenmos los derechos de autor.</p>
+                            <button class="btn">Crear</button>
+                        </div>
+                    </div>
+
+                    <!--CARTA 4-->
+                    <div class="cartas swiper-slide" id="robusta">
+                        <div class="texto-carta">
+                            <h3>Robusta</h3>
+                            <p>Con esta marca de agua, grantizamos que los derechos de autor se mantendran intactos ya que resisten todo tipo de ataques y modificaciones.</p>
+                            <button class="btn">Crear</button>
+                        </div>
+                    </div>
+
+                    <!--CARTA 5-->
+                    <div class="cartas swiper-slide" id="fragil">
+                        <div class="texto-carta">
+                            <h3>POododjd</h3>
+                            <p>dkfcdcdcdcdcdcddmfkdsmfksdmfkd dc cdsdcdscds ddsfdc sfkdsmfkdsmf</p>
+                            <button class="btn">Crear</button>
+                        </div>
+                    </div>
+
+                    <!--CARTA 6-->
+                    <div class="cartas swiper-slide" id="fragil">
+                        <div class="texto-carta">
+                            <h3>POododjd</h3>
+                            <p>dkfcdcdcdcdcdcddmfkdsmfksdmfkd dc cdsdcdscds ddsfdc sfkdsmfkdsmf</p>
+                            <button class="btn">Crear</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--MARCADORES INFERIORES-->
+                <div class="swiper-pagination "></div>
+            </div>
+            
+            
+
+        </div>
+    </main>
+    <footer>
+        <div class="separador"></div>
+        <div class="copy">
+            <span class="autor">Copyright © 2024 <a id="marca"> WaterMarks </a> / Todos los derechos reservados.</span>
+        </div>        
+    </footer>
+
+    <!--SCRIPTS-->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
